@@ -1,13 +1,304 @@
-html {
-    width: 1500px;
-    margin: auto;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 1500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+button {
+  color: #808080;
 }
 
 header {
-    height: 400px;
-    text-align: center;
+  text-align: center;
+  background-color: #808080;
+  height: 400px;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+  color: #ffffff;
 }
 
-header, footer {
-    background-image: url(./fundo.png);
+header h2 {
+  padding-top: 69px;
+  padding-bottom: 0.5em;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: 0.8em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu {
+  margin-top: 50px;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#menu ul li {
+  background-color: #ffffff;
+  width: 160px;
+  padding: 0.8em 0;
+  border-radius: 3px;
+  box-shadow: 0px 1px 6px #00000029;
+}
+
+#menu a {
+  color: #808080;
+}
+
+.help-us-form>div>label {
+  flex-direction: row;
+  align-items: center;
+}
+
+.help-us-form p {
+  margin-top: 2.5px;
+}
+
+.help-us-form>div {
+  display: flex;
+  gap: 1em;
+}
+
+.first-container {
+  display: flex;
+  gap: 4em;
+  padding: 2em;
+  width: 60%;
+  color: #808080;
+}
+
+.about-us {
+  display: flex;
+  width: 55%;
+  margin: auto;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.help-us-form {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.about-us h2 {
+  font-size: 20px;
+}
+
+.about-us p {
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.help-us-form label {
+  font-size: 12px;
+  gap: 0.5em;
+}
+
+.help-us-form input {
+  height: 25px;
+}
+
+.help-us-form button {
+  height: 39px;
+  color: #808080;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+.second-container {
+  width: 60%;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-container>div {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.second-container>div>div {
+  display: flex;
+  flex-direction: column;
+  width: 193px;
+  padding: 1rem;
+  gap: 0.8em;
+}
+
+.second-container img {
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.title-with-line {
+  width: fit-content;
+  background-color: #ffffff;
+  margin-top: -1.2rem;
+  padding: 0 1rem;
+}
+
+hr {
+  width: 100%;
+}
+
+.second-containear div h2 {
+  font-size: 14px;
+}
+
+.second-container p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.second-container h3 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.second-container div>div>button {
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  padding: 0;
+  margin: 0;
+}
+
+.second-container button {
+  padding: 1em 3em;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  margin: 1em 2em;
+}
+
+.third-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  color: #808080;
+  padding-top: 3em;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-container p {
+  font-size: 14px;
+}
+
+.third-container form div {
+  display: flex;
+  gap: 2em;
+}
+
+.third-container form label {
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.third-container form label input {
+  width: 340px;
+  height: 30px;
+}
+
+.third-container form button {
+  padding: 1em 3em;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  margin: 2em 2em;
+  width: 260px;
+}
+
+footer {
+  background-color: #808080;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #808080;
+  height: 300px;
+  clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+  color: #ffffff;
+  margin-top: 3em;
+}
+
+button {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #808080 !important;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    width: 100%;
+  }
+}
+
+#menu ul {
+  width: 50%;
+}
+
+#menu li {
+  padding: 0;
+}
+
+#menu {
+  padding: 0;
 }
