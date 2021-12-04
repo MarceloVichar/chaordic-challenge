@@ -1,0 +1,13 @@
+html {
+    width: 1500px;
+    margin: auto;
+}
+
+header {
+    height: 400px;
+    text-align: center;
+}
+
+header, footer {
+    background-image: url(./fundo.png);
+}
